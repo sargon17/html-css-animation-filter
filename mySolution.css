@@ -24,3 +24,46 @@
     border-radius: 50%;
 }
 /* / Execise 3 */
+
+/* Execise 4 */
+.ex-4-square{
+    transition: all 1s ease-in-out;
+}
+.ex-4-square:hover{
+    opacity: 0;
+}
+/* / Execise 4 */
+
+/* Execise 5 */
+.ex-5-square{
+    transition: all 1s ease-in-out;
+}
+.ex-5-square:hover{
+    transform: scale(2);
+}
+/* / Execise 5 */
+
+/* Execise 6 */
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+/* / Execise 6 */
+
+/* Execise 7 */
+.ex-7-img{
+    transition: all 1s ease-in-out;
+}
+.ex-7-img:hover{
+    filter: grayscale(1) sepia(.5);
+}
+/* / Execise 7 */
+
+/* Execise 8 */
+.ex-8-img{
+    transition: all 1s ease-in-out;
+}
+.ex-8-img:hover{
+    filter: grayscale(.5) sepia(.5);
+    border-radius: 20px;
+}
+/* / Execise 8 */
