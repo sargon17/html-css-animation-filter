@@ -1,69 +1,121 @@
-/* Execise 1 */
-.ex-1-square{
-    transition: all 1s ease-in-out;
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(calc(360deg / 4));
+  }
+  50% {
+    transform: rotate(calc(360deg / 2));
+  }
+  75% {
+    transform: rotate(calc(360deg - 360deg / 4));
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.ex-1-square:hover{
-    background-color: red;
+@keyframes quarterRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(calc(360deg - 360deg / 4));
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Execise 1 */
+.ex-1-square {
+  transition: all 1s ease-in-out;
+}
+.ex-1-square:hover {
+  background-color: red;
 }
 /* / Execise 1 */
 
 /* Execise 2 */
-.ex-2-square{
-    transition: all 1s ease-in-out;
+.ex-2-square {
+  transition: all 1s ease-in-out;
 }
-.ex-2-square:active{
-    width: 100%;
+.ex-2-square:active {
+  width: 100%;
 }
 /* / Execise 2 */
 
 /* Execise 3 */
-.ex-3-square{
-    transition: all 1s ease-in-out;
+.ex-3-square {
+  transition: all 1s ease-in-out;
 }
-.ex-3-square:hover{
-    border-radius: 50%;
+.ex-3-square:hover {
+  border-radius: 50%;
 }
 /* / Execise 3 */
 
 /* Execise 4 */
-.ex-4-square{
-    transition: all 1s ease-in-out;
+.ex-4-square {
+  transition: all 1s ease-in-out;
 }
-.ex-4-square:hover{
-    opacity: 0;
+.ex-4-square:hover {
+  opacity: 0;
 }
 /* / Execise 4 */
 
 /* Execise 5 */
-.ex-5-square{
-    transition: all 1s ease-in-out;
+.ex-5-square {
+  transition: all 1s ease-in-out;
 }
-.ex-5-square:hover{
-    transform: scale(2);
+.ex-5-square:hover {
+  transform: scale(2);
 }
 /* / Execise 5 */
 
 /* Execise 6 */
-.ex-6-img:hover{
-    filter: grayscale(1);
+.ex-6-img:hover {
+  filter: grayscale(1);
 }
 /* / Execise 6 */
 
 /* Execise 7 */
-.ex-7-img{
-    transition: all 1s ease-in-out;
+.ex-7-img {
+  transition: all 1s ease-in-out;
 }
-.ex-7-img:hover{
-    filter: grayscale(1) sepia(.5);
+.ex-7-img:hover {
+  filter: grayscale(1) sepia(0.5);
 }
 /* / Execise 7 */
 
 /* Execise 8 */
-.ex-8-img{
-    transition: all 1s ease-in-out;
+.ex-8-img {
+  transition: all 1s ease-in-out;
 }
-.ex-8-img:hover{
-    filter: grayscale(.5) sepia(.5);
-    border-radius: 20px;
+.ex-8-img:hover {
+  filter: grayscale(0.5) sepia(0.5);
+  border-radius: 20px;
 }
 /* / Execise 8 */
+
+/* Execise 9 */
+.ex-9-img {
+  transition: all 1s ease-in-out;
+}
+.ex-9-img:hover {
+  filter: grayscale(0.5) sepia(0.5);
+  transform: scale(1.5);
+  border-radius: 20px;
+}
+/* / Execise 9 */
+
+/* Exercise 10 */
+.ex-10-icon {
+  animation: rotation 1s linear infinite;
+}
+/* Exercise 10 */
+
+/* Exercise 11 */
+.ex-11-icon:hover {
+  animation: quarterRotation 2s linear backwards;
+}
+/* Exercise 11 */
